@@ -1,0 +1,57 @@
+!!!
+%html
+  %head
+
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
+
+    %script{ src: 'http://code.jquery.com/jquery-1.11.1.min.js' }
+    %script{ src: 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js' }
+    %script{ src: 'http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js' }
+
+    %link{ href: "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css", rel: "stylesheet", type: "text/css" }
+
+    %script{ src: 'form.js' }
+
+  %body
+
+    .container
+
+      %br
+      %br
+      %br
+
+      %form.form-horizontal
+
+        .alert.alert-success.hide
+        .alert.alert-danger.hide
+
+        .form-group
+          %label.control-label.col-sm-2 Endpoint
+          .col-sm-10
+            %input.form-control{ type: 'text', name: 'endpoint', autocomplete: "on" }
+
+        .form-group
+          %label.control-label.col-sm-2 Url
+          .col-sm-10
+            %input.form-control{ type: 'text', name: 'url', autocomplete: "on" }
+
+        %br
+
+        .form-group
+          %label.control-label.col-sm-2 First name
+          .col-sm-10
+            %input.form-control{ type: 'text', name: 'first_name', autocomplete: "on" }
+
+        .form-group
+          %label.control-label.col-sm-2 Last name
+          .col-sm-10
+            %input.form-control{ type: 'text', name: 'last_name', autocomplete: "on" }
+
+        .form-group
+          %label.control-label.col-sm-2 Email name
+          .col-sm-10
+            %input.form-control{ type: 'text', name: 'email', autocomplete: "on" }
+
+        .form-group
+          .col-sm-offset-2.col-sm-10
+            %button.btn.btn-success{ type: 'submit' } Submit
